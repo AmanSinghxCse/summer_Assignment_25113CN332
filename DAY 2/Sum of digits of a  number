@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+int num,sum = 0;
+int d;
+
+cout << " ENTER THE NUMBER FOR SUM : " ;
+cin>> num;
+
+while (num > 0){
+d = num % 10;
+num = num/10;
+sum = sum + d;
+}
+
+cout << " THE SUM IS = " << sum << endl;
+
+    return 0;
+}

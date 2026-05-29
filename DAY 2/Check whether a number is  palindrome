@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+int num,rev = 0;
+int d,temp;
+
+cout << " ENTER THE NUMBER FOR CHECK WHETHER IT IS PALINDROME OR NOT : " ;
+cin>> num;
+
+temp = num;
+while (num > 0){
+d = num % 10;
+num = num/10;
+rev = rev * 10 + d;
+}
+
+if(temp == rev){
+    cout << " YES! NUMBER IS PALINDROME " << endl;
+}else {
+    cout << " NO! NUMBER IS NOT PALINDROME " << endl; 
+}
+
+    return 0;
+}

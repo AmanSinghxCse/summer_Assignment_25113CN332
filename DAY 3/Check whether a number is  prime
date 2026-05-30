@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+int num,flag = 0;
+
+cout << " ENTER THE NUMBER FOR CHECKING PRIME: " ;
+cin>> num;
+
+if (num <= 1){
+    cout << " NUMBER IS NOT A PRIME : " << endl;
+}else {
+    for (int i=2; i<=num/2 ; i++){
+        if(num % i == 0){
+            flag = 1;
+            break;
+        }
+    }
+}
+if ( flag == 0){
+    cout << " YES! NUMBER IS PRIME " << endl;
+} else {
+    cout << " NO! NUMBER IS NOT PRIME " << endl;
+}
+
+    return 0;
+}

@@ -8,7 +8,7 @@ cout << " ENTER THE NUMBER FOR CHECKING PRIME: " ;
 cin>> num;
 
 if (num <= 1){
-    cout << " NUMBER IS NOT A PRIME : " << endl;
+    flag = 1;
 }else {
     for (int i=2; i<=num/2 ; i++){
         if(num % i == 0){
